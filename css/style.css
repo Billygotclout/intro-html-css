@@ -158,13 +158,13 @@ body {
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
-    flex-flow: wrap;
+ 
 }
 
 .leading .leading-image {
-    width: max(30%, 70%);
+    width:30%;
     height: auto;
-margin: auto;
+
     
 }
 
@@ -203,7 +203,7 @@ margin: auto;
     margin-left: 2rem;
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:750px) {
  .nav-item, .buttons{
     display: none;
  }
