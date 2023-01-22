@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="" class="nav-brand"><img src="./images/logo.svg" alt="" /></a>
+        <ul class="nav-links">
+          <li class="nav-item dropdown">
+            <a href=""
+              >Features
+              <img
+                class="arrow-down"
+                src="./images/icon-arrow-down.svg"
+                alt=""
+              />
+            </a>
+            <ul class="dropdown-items first">
+              <li class="dropdown-item">
+                <a href=""
+                  ><img src="./images/icon-todo.svg" alt="" /> Todo List</a
+                >
+              </li>
+              <li class="dropdown-item">
+                <a href=""
+                  ><img src="./images/icon-calendar.svg" alt="" /> Calendar</a
+                >
+              </li>
+              <li class="dropdown-item">
+                <a href=""
+                  ><img src="./images/icon-planning.svg" alt="" /> Planning</a
+                >
+              </li>
+              <li class="dropdown-item">
+                <a href=""
+                  ><img src="./images/icon-reminders.svg" alt="" /> Reminders</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a href=""
+              >Company
+              <img
+                class="arrow-down"
+                src="./images/icon-arrow-down.svg"
+                alt="" />
+               </a>
+            <ul class="dropdown-items">
+              <li class="dropdown-item"><a href="">History</a></li>
+              <li class="dropdown-item"><a href="">Our Team</a></li>
+              <li class="dropdown-item"><a href="">Blog</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="">Careers</a></li>
+          <li class="nav-item"><a href="">About</a></li>
+        </ul>
+      </nav>
+      <section class="buttons">
+        <a href="" class="login-btn"> Login</a>
+        <button class="register-btn">Register</button>
+       
+      </section>
+
+      <a href="javascript:void(0)" class="open-btn" onclick="openNav()"><img src="./images/icon-menu.svg" alt=""></a>
+      <div id="mySidenav" class="sidenav">
+         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="./images/icon-close-menu.svg" alt=""></a>
+         <ul class="sidenav-links">
+          <li class="sidenav-item dropdown-side">
+            <a href=""
+              >Features
+              <img
+                class="arrow-down"
+                src="./images/icon-arrow-down.svg"
+                alt=""
+              />
+            </a>
+            <ul class="dropdown-items first">
+              <li class="dropdown-item">
+                <a href=""
+                  ><img src="./images/icon-todo.svg" alt="" /> Todo List</a
+                >
+              </li>
+              <li class="dropdown-item">
+                <a href=""
+                  ><img src="./images/icon-calendar.svg" alt="" /> Calendar</a
+                >
+              </li>
+              <li class="dropdown-item">
+                <a href=""
+                  ><img src="./images/icon-planning.svg" alt="" /> Planning</a
+                >
+              </li>
+              <li class="dropdown-item">
+                <a href=""
+                  ><img src="./images/icon-reminders.svg" alt="" /> Reminders</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="sidenav-item dropdown-side">
+            <a href=""
+              >Company
+              <img
+                class="arrow-down"
+                src="./images/icon-arrow-down.svg"
+                alt="" />
+               </a>
+            <ul class="dropdown-items">
+              <li class="dropdown-item"><a href="">History</a></li>
+              <li class="dropdown-item"><a href="">Our Team</a></li>
+              <li class="dropdown-item"><a href="">Blog</a></li>
+            </ul>
+          </li>
+          <li class="sidenav-item"><a href="">Careers</a></li>
+          <li class="sidenav-item"><a href="">About</a></li>
+        </ul>
+         </div>
+    </header>
+  
+ 
+   
+    <main class="main">
+      <section class="leading">
+        <section class="leading-element">
+          <h1 class="hero-text">
+            Make <br />
+            remote work
+          </h1>
+          <article class="hero-paragraph">
+            Get your team in sync, no matter your location. <br />
+            Streamline processes, create team rituals, and <br />
+            watch productivity soar.
+          </article>
+
+          <button class="hero-btn">Learn more</button>
+
+          <section class="icons">
+            <img
+              src="./images/client-databiz.svg"
+              alt=""
+              class="hero-images"
+            /><img
+              src="./images/client-audiophile.svg"
+              alt=""
+              class="hero-images"
+            /><img
+              src="./images/client-meet.svg"
+              alt=""
+              class="hero-images"
+            /><img src="./images/client-maker.svg" alt="" class="hero-images" />
+          </section>
+        </section>
+        <img
+          src="./images/image-hero-desktop.png"
+          alt=""
+          class="leading-image"
+        />
+        <img
+          src="./images/image-hero-mobile.png"
+          alt=""
+          class="leading-image-mobile"
+        />
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
